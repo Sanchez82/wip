@@ -1,0 +1,26 @@
+{
+    "version": "1.0.0",
+    "name": "asp.net",
+    "private": true,
+    "dependencies": {
+        "@types/angular": "^1.6.25",
+        "@types/angular-material": "^1.1.52",
+        "@uirouter/angularjs": "^1.0.5",
+        "angular": "^1.6.5",
+        "angular-animate": "^1.6.5",
+        "angular-aria": "^1.6.5",
+        "angular-material": "^1.1.4",
+        "angular-messages": "^1.6.5",
+        "material-design-icons": "^3.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^8.0.8",
+        "nodemon": "^1.11.0",
+        "ts-node": "^3.2.0",
+        "typescript": "^2.4.1"
+    },
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch app  --exec ./node_modules/.bin/ts-node -- ./app.module.ts"
+  }
+}
