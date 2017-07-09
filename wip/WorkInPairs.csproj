@@ -24,6 +24,22 @@
     <Content Include="wwwroot\app\home\home.component.js" />
     <Content Include="wwwroot\app\home\home.component.js.map" />
     <Content Include="wwwroot\app\home\home.component.ts" />
+    <Content Include="wwwroot\app\login\home.component.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\app\login\home.component.html" />
+    <Content Include="wwwroot\app\login\home.component.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\app\login\home.component.ts">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\app\login\login.component.css" />
+    <Content Include="wwwroot\app\login\login.component.html" />
+    <Content Include="wwwroot\app\login\login.component.js" />
+    <Content Include="wwwroot\app\login\login.component.js.map" />
+    <Content Include="wwwroot\app\login\login.component.ts" />
+    <Content Include="wwwroot\app\login\login.service.ts" />
     <Content Include="wwwroot\app\menubar\menubar.component.css" />
     <Content Include="wwwroot\app\menubar\menubar.component.html" />
     <Content Include="wwwroot\app\menubar\menubar.component.js" />

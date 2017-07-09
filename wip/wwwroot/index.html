@@ -1,8 +1,10 @@
 ﻿<html>
 <head>
     <!--Link styles here-->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-    
+   <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">-->
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css" />
+    <link rel="stylesheet" href="app/login/login.component.css"/>
+  
     <menu-bar></menu-bar>
 
 </head>
@@ -10,9 +12,6 @@
 <body ng-app="app">
     
     <ui-view></ui-view>
-
-
-  
 
     <!--Link dependencies scripts here-->
     <script src="node_modules/angular/angular.js"></script>
@@ -27,6 +26,7 @@
     <script src="app.module.js"></script>
     <script src="app/home/home.component.js"></script>
     <script src="app/menubar/menubar.component.js"></script>
+    <script src="app/login/login.component.js"></script>
 
 </body>
 </html>

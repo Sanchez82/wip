@@ -12,7 +12,6 @@
 
     ]);
 
-    //angular.bootstrap(document, ['app']);
     app.config(($stateProvider) => {
 
         var helloState = {
@@ -23,6 +22,16 @@
         }
 
         $stateProvider.state(helloState);
+
+        var loginState = {
+            name: 'login',
+            url: '/login',
+            templateUrl: "app/login/login.component.html",
+            controller: "LoginComponent as ctrl"
+        }
+
+        $stateProvider.state(loginState);
+
 
     });
 

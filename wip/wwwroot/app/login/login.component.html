@@ -1,0 +1,39 @@
+﻿
+<div>
+
+    <h3>Hello you ca get in here!!</h3>
+
+    <div ng-cloak>
+        <md-content>
+            <md-tabs>
+                <md-tab label="Login">
+                    <md-content>
+                        <div layout="column" layout-align="center center">
+                            <md-input-container>
+                                <label>Username:</label>
+                                <input required type="text" ng-model="ctrl.username" md-maxlength="10">
+                            </md-input-container>
+                            <md-input-container>
+
+                                <label>Password:</label>
+                                <input required type="password" ng-model="ctrl.password" md-maxlength="20">
+
+                            </md-input-container>
+                            <div layout="row" layout-align="center center">
+                                <md-button class="md-primary" ng-click="ctrl.login()">Login</md-button>
+                                <md-button class="md-primary">Cancel</md-button>
+                            </div>
+                        </div>
+                    </md-content>
+
+                </md-tab>
+                <md-tab label="Register"></md-tab>
+            </md-tabs>
+        </md-content>
+
+    </div>
+
+
+
+</div>
+
