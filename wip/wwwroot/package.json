@@ -5,6 +5,7 @@
     "dependencies": {
         "@types/angular": "^1.6.25",
         "@types/angular-material": "^1.1.52",
+        "@types/angular-ui-router": "^1.1.37",
         "@uirouter/angularjs": "^1.0.5",
         "angular": "^1.6.5",
         "angular-animate": "^1.6.5",

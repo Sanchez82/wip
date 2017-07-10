@@ -1,0 +1,36 @@
+﻿<md-sidenav  class="md-sidenav-left"   
+            md-component-id="{{ctrl.navName}}"
+            md-is-locked-open="$mdMedia('gt-md')"
+            md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+      <md-button layout-aling="left" ng-click="ctrl.close()"
+                 aria-label="homeMenu">
+          <md-icon class="md-primary"
+                         md-svg-icon="img/icons/menu.svg"
+                         aria-label="mainIcon">
+          </md-icon>
+      </md-button>
+    </md-toolbar>
+
+    <md-content layout-padding>
+        <div ng-repeat="button in ctrl.buttons">
+            <md-button class="md-no-ink {{ctrl.buttonClass(button)}}"
+                       ng-show="ctrl.buttonShowCondition(button)"
+                       ng-click="ctrl.buttonAction(button)"
+                       aria-label="{{ctrl.buttonLabel(button)}}">
+                <md-icon ng-show="button.icon"
+                         class="md-primary"
+                         md-svg-icon="{{ctrl.buttonIcon(button)}}"
+                         aria-label="{{ctrl.buttonLabel(button)}}">
+                </md-icon>
+                <span>{{ctrl.buttonText(button)}}</span>
+            </md-button>
+        </div>
+
+        <md-button ng-click="ctrl.close()" class="md-primary" hide-gt-md>
+            Close Sidenav Left
+        </md-button>
+    </md-content>
+
+</md-sidenav>

@@ -16,15 +16,7 @@
         constructor() { }
 
         private init() {
-            this.activeButtons = [
-                {
-                    action: () => { alert("first button actions") },
-                    text: "Add Rule",
-                    label: "New Rule",
-                    class: "md-primary",
-                    icon: ""
-                }
-            ];
+            this.activeButtons = [];
         }
         setButtons(buttons: IToolBarButton[]) { }
         getButtons() { return this.activeButtons; }

@@ -12,16 +12,16 @@
 
     ]);
 
-    app.config(($stateProvider) => {
+    app.config(($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) => {
 
-        var helloState = {
+        var homeState = {
             name: 'home',
             url: '/home',
             templateUrl: "app/home/home.component.html",
             controller: "HomeComponent as ctrl"
         }
 
-        $stateProvider.state(helloState);
+        $stateProvider.state(homeState);
 
         var loginState = {
             name: 'login',
@@ -30,6 +30,8 @@
             controller: "LoginComponent as ctrl"
         }
 
+        $urlRouterProvider.when("", "/home");
+        $urlRouterProvider.otherwise("/home");
         $stateProvider.state(loginState);
 
 

@@ -4,15 +4,7 @@ var app;
         function ToolbarService() {
         }
         ToolbarService.prototype.init = function () {
-            this.activeButtons = [
-                {
-                    action: function () { alert("first button actions"); },
-                    text: "Add Rule",
-                    label: "New Rule",
-                    class: "md-primary",
-                    icon: ""
-                }
-            ];
+            this.activeButtons = [];
         };
         ToolbarService.prototype.setButtons = function (buttons) { };
         ToolbarService.prototype.getButtons = function () { return this.activeButtons; };

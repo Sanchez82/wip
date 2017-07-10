@@ -3,6 +3,7 @@
 
     //Services
     export const toolbarService = "toolbarService";    
+    export const navbarService = "navbarService";   
 
     //Routing States
 
