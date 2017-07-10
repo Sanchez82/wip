@@ -7,7 +7,6 @@
         // Custom modules
         // 3rd Party Modules
     ]);
-    //angular.bootstrap(document, ['app']);
     app.config(function ($stateProvider) {
         var helloState = {
             name: 'home',
@@ -16,6 +15,13 @@
             controller: "HomeComponent as ctrl"
         };
         $stateProvider.state(helloState);
+        var loginState = {
+            name: 'login',
+            url: '/login',
+            templateUrl: "app/login/login.component.html",
+            controller: "LoginComponent as ctrl"
+        };
+        $stateProvider.state(loginState);
     });
 })();
 //# sourceMappingURL=app.module.js.map

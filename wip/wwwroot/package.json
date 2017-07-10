@@ -19,8 +19,8 @@
         "ts-node": "^3.2.0",
         "typescript": "^2.4.1"
     },
-  "scripts": {
-    "start": "npm run build:live",
-    "build:live": "nodemon --watch app  --exec ./node_modules/.bin/ts-node -- ./app.module.ts"
-  }
+    "scripts": {
+        "start": "npm run build:live",
+        "build:live": "nodemon --watch app  --exec ./node_modules/.bin/ts-node -- ./app.module.ts"
+    }
 }
