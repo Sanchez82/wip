@@ -11,8 +11,7 @@
         "angular-animate": "^1.6.5",
         "angular-aria": "^1.6.5",
         "angular-material": "^1.1.4",
-        "angular-messages": "^1.6.5",
-        "material-design-icons": "^3.0.1"
+        "angular-messages": "^1.6.5"
     },
     "devDependencies": {
         "@types/node": "^8.0.8",
