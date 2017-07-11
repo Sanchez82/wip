@@ -1,14 +1,21 @@
 var app;
 (function (app) {
     var HomeComponent = (function () {
-        function HomeComponent() {
+        function HomeComponent(homeService) {
+            this.homeService = homeService;
+            this.gettedFromServer = "";
         }
         HomeComponent.prototype.$onInit = function () {
-            debugger;
-            //Debugger33333
+            var _this = this;
+            this.homeService.get().then(function (response) {
+                debugger;
+                console.log(response);
+                _this.gettedFromServer = response;
+            });
         };
         return HomeComponent;
     }());
+    HomeComponent.$inject = [inject.homeService];
     var componentOptions = {
         templateUrl: "app/home/home.component.html",
         controller: HomeComponent,

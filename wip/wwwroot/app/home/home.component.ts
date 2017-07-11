@@ -2,9 +2,17 @@
 {
     class HomeComponent implements ng.IComponentController {
 
+        private gettedFromServer = "";
+
+        static $inject = [inject.homeService];
+        constructor(private homeService: IHomeService) {}
+
         $onInit() {
-            debugger;
-            //Debugger33333
+            this.homeService.get().then((response) => {
+                debugger;
+                console.log(response);
+                this.gettedFromServer = response;
+            });    
         }
     }
 

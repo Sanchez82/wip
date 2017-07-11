@@ -4,6 +4,7 @@ var inject;
     //Services
     inject.toolbarService = "toolbarService";
     inject.navbarService = "navbarService";
+    inject.homeService = "homeService";
     //Routing States
     angular.module("inject", ["app"]);
 })(inject || (inject = {}));
