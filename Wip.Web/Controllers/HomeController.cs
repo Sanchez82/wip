@@ -1,21 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Wip.Core.Models;
+using Microsoft.Extensions.Configuration;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace WorkInPairs.Controllers
+namespace WipWeb.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class HomeController : Controller
     {
+        private WipContext _wipcontext;
+        private IConfigurationRoot _config;
+        
+        public HomeController(WipContext wipcontext, IConfigurationRoot config)
+        {
+            _wipcontext = wipcontext;
+            _config = config;
+        }
+
         // GET: api/values
         [HttpGet]
         public IActionResult GetWelcome()
         {
-            return Ok("Welcome to WIP Digital Portal");
+            //Testing context
+            var users = _wipcontext.Users.ToList();
+
+            return Ok(_config["Welcome"]);
         }
         [HttpGet]
         public IActionResult GetNiente2()
