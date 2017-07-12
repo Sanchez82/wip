@@ -7,6 +7,5 @@ namespace Wip.Core.Models
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public string HostName { get; set; }
-        public long LoggedTime { get; set; }
     }
 }
