@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputType>exe</OutputType>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <ApplicationIcon />
-    <OutputTypeEx>exe</OutputTypeEx>
+    <OutputTypeEx>library</OutputTypeEx>
     <StartupObject />
     <PackageTargetFallback>portable-net45;win8;dotnet;dnxcore50</PackageTargetFallback>
     <PackageTargetFallback>portable-net45;win8</PackageTargetFallback>

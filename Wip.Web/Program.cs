@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
-namespace WipWeb
+namespace Wip
 {
     public class Program
     {
-        public static IConfigurationRoot Settings { get; set; }
-
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()

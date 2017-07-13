@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Wip.Core.Models;
 using Microsoft.Extensions.Configuration;
+using Wip.Web.DBContext;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace WipWeb.Controllers
+namespace Wip.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class HomeController : Controller
