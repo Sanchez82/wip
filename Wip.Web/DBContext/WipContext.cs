@@ -13,5 +13,6 @@ namespace Wip.Web.DBContext
         public DbSet<Login> Logins { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
+        public DbSet<SecurityProfile> SecurityProfiles { get; set; }
     }
 }

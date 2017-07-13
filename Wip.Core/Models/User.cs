@@ -11,6 +11,7 @@ namespace Wip.Core.Models
         public string Lastname { get; set; }
         public string  Username { get; set; }
         public string Password { get; set; }
+        public ICollection<SecurityProfile> SecurityProfile { get; set; }
         public ICollection<Login> LoginRecord { get; set; }
 
     }
