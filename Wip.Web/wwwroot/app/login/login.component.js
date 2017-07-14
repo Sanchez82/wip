@@ -1,7 +1,8 @@
 var app;
 (function (app) {
     var LoginComponent = (function () {
-        function LoginComponent() {
+        function LoginComponent(loginService) {
+            this.loginService = loginService;
         }
         LoginComponent.prototype.$onInit = function () {
         };
@@ -15,6 +16,7 @@ var app;
         };
         return LoginComponent;
     }());
+    LoginComponent.$inject = [inject.loginService];
     var componentOptions = {
         templateUrl: "app/login/login.component.html",
         controller: LoginComponent,

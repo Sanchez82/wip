@@ -4,24 +4,18 @@
         private username: string;
         private password: string;
 
-        constructor() { }
+        static $inject = [inject.loginService];
+        constructor(private loginService: ILoginService) { }
 
         $onInit() {
-
-
         }
-
-
         private login() {
             debugger;
-
             if (this.username && this.password) {
                 alert("Adesso e solo adesso faccio la chiamata al server. Dove il server mi ritorna il access token.");
                 return;
             }
             alert("Devi scrivere sia la username che password!!! ");
-
-
         }
 
     }

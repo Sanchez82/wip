@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using System.IO;
 using Wip.Core.Models;
 using Wip.Web.DBContext;
+using Wip.Web;
+using Wip.Web.Repositories;
 
 namespace Wip
 {
@@ -36,7 +38,12 @@ namespace Wip
 
             //Adding WipContextSeed to the DI Service
             services.AddTransient<WipContextSeed>();
-            
+
+            //Adding Repositories
+            services.AddScoped<IWipRepository, WipRepository>();
+            //Mock for test cases
+            //services.AddScoped<IWipRepository, MockWipRespository>();
+
             //Adding Mvc
             services.AddMvc();
         }

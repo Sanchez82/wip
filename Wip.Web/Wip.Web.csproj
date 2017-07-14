@@ -31,6 +31,7 @@
     <Content Include="wwwroot\app\login\login.component.js" />
     <Content Include="wwwroot\app\login\login.component.js.map" />
     <Content Include="wwwroot\app\login\login.component.ts" />
+    <Content Include="wwwroot\app\login\login.service.ts" />
     <Content Include="wwwroot\app\navbar\nav.service.js" />
     <Content Include="wwwroot\app\navbar\nav.service.js.map" />
     <Content Include="wwwroot\app\navbar\nav.service.ts" />

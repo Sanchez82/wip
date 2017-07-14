@@ -6,8 +6,14 @@ var app;
             this.$q = $q;
             this.$http = $http;
         }
-        HomeService.prototype.get = function () {
+        HomeService.prototype.getWelcome = function () {
             return this.$http.get("api/Home/GetWelcome").then(function (response) {
+                debugger;
+                return response.data;
+            });
+        };
+        HomeService.prototype.getAllUsers = function () {
+            return this.$http.get("api/Home/GetAllUsers").then(function (response) {
                 return response.data;
             });
         };

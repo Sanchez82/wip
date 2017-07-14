@@ -1,18 +1,27 @@
-﻿module app
-{
+﻿module app {
     class HomeComponent implements ng.IComponentController {
 
         private gettedFromServer = "";
+        private registedUser = "";
 
         static $inject = [inject.homeService];
-        constructor(private homeService: IHomeService) {}
+        constructor(private homeService: IHomeService) { }
 
         $onInit() {
-            this.homeService.get().then((response) => {
+            this.homeService.getWelcome().then((response) => {
                 debugger;
                 console.log(response);
                 this.gettedFromServer = response;
-            });    
+            });
+
+            this.homeService.getAllUsers().then((response) => {
+                debugger;
+                if (response) {
+                    console.log(response.length > 0);
+                    this.registedUser = response[0].name;
+                }
+            });
+
         }
     }
 
